@@ -1,19 +1,25 @@
 set(BLUETOOTH_SRCS 
-        "bluetooth/bluetooth.cpp"
-        "bluetooth/bt_nimble.cpp"
-        "bluetooth/gatt_svr.cpp"
-        "bluetooth/misc.cpp"
+        "modules/bluetooth/src/bluetooth.cpp"
+        "modules/bluetooth/src/bt_nimble.cpp"
+        "modules/bluetooth/src/gatt_svr.cpp"
+        "modules/bluetooth/src/misc.cpp"
+)
+
+set(HEXAPOD_SRCS
+    "modules/hexapod/src/hexapod.cpp"
+    "modules/hexapod/src/hexapod_leg.cpp"
+    "modules/hexapod/src/pca9685_handler.cpp"
 )
 
 idf_component_register(SRCS 
     "hexapod_testing.cpp"
-    "hexapod.cpp"
-    "hexapod_leg.cpp"
-    "pca9685_handler.cpp"
+    ${HEXAPOD_SRCS}
     ${BLUETOOTH_SRCS}
     
-#    INCLUDE_DIRS 
-#    ".")
+    INCLUDE_DIRS 
+    "modules/bluetooth/includes"
+    "modules/hexapod/includes"
 )
+
 target_compile_options(${COMPONENT_LIB} PRIVATE "-Wno-format")
 

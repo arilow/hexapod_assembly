@@ -1,6 +1,6 @@
-#include "hexapod.h"
+#include "hexapod/hexapod.h"
 
-#include "pca9685_handler.h"
+#include "hexapod/pca9685_handler.h"
 #include <esp_log.h>
 
 Hexapod::Hexapod()

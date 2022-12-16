@@ -22,15 +22,15 @@
   SOFTWARE.
  ****************************************************/
 
-#include "bt_nimble.h"
+#include "bluetooth/bt_nimble.h"
 
 #include "console/console.h"
 #include "esp_log.h"
 #include "esp_nimble_hci.h"
-#include "gatt_svrc.h"
+#include "bluetooth/gatt_svrc.h"
 #include "host/ble_hs.h"
 #include "host/util/util.h"
-#include "misc.h"
+#include "bluetooth/misc.h"
 #include "nimble/nimble_port.h"
 #include "nimble/nimble_port_freertos.h"
 #include "nvs_flash.h"

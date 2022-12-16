@@ -1,4 +1,4 @@
-#include "hexapod_leg.h"
+#include "hexapod/hexapod_leg.h"
 
 
 uint32_t HexapodLeg::angleToPWMDuty(int angle) {

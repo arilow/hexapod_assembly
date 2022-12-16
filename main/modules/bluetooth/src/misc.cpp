@@ -17,7 +17,7 @@
  * under the License.
  */
 
-#include "misc.h"
+#include "bluetooth/misc.h"
 
 /**
  * Utility function to log an array of bytes.

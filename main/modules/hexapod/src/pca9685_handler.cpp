@@ -11,7 +11,7 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
-#include "pca9685_handler.h"
+#include "hexapod/pca9685_handler.h"
 
 #include <driver/i2c.h>
 #include <esp_log.h>

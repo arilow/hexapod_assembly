@@ -1,7 +1,7 @@
-#include "bluetooth.h"
+#include "bluetooth/bluetooth.h"
 
-#include "bt_nimble.h"
-#include "gatt_svrc.h"
+#include "bluetooth/bt_nimble.h"
+#include "bluetooth/gatt_svrc.h"
 #include "host/ble_hs.h"
 
 namespace {
